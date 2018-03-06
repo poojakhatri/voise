@@ -12,7 +12,7 @@
         $password =hash('sha256',$params['password']);
 
         $query = "SELECT * FROM users WHERE email='$email' AND  password ='$password'";
-        $result = mysqli_query($conn,$query);
+        $result = mysqli_query($lib['database'],$query);
         $count = mysqli_num_rows($result);
 
         $response = ($count >= 1)
