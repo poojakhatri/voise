@@ -1,0 +1,8 @@
+{
+  "dbConnection" : {
+    "host" : "localhost",
+    "username" : "root",
+    "password" : "",
+    "database" : "voise"
+  }
+}
