@@ -19,7 +19,7 @@
          }else{
 
            $sql = "SELECT * FROM users WHERE email = '$email';";
-           $emailDB = mysqli_query($conn,$sql);
+           $emailDB = mysqli_query($lib['database'],$sql);
            $count = mysqli_num_rows($emailDB);
 
             if($count >=1) {
